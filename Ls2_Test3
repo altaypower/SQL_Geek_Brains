@@ -1,0 +1,16 @@
+Создайте дамп базы данных example из предыдущего задания, разверните содержимое дампа в новую базу данных sample.
+
+создаем дамп
+$ mysqldump example > example.sql
+
+создаем БД sample
+$ mysql
+mysql> CREATE DATABASE IF NOT EXISTS sample
+mysql> quit
+
+Разворачиваем дамп example.sql в sample
+$ mysql sample < example.sql
+
+
+
+
