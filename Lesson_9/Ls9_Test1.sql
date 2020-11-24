@@ -29,6 +29,10 @@ insert into sample.users select * from shop.users where `id` = 1;
 
 select * from sample.users;
 
+DELETE FROM shop.users where `id` = 1 LIMIT 1;
+
+select * from shop.users;
+
 COMMIT;
 
 
